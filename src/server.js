@@ -18,7 +18,7 @@ const connection = mysql.createConnection({
 
 
 server.get("/produtos",(req,res) => {
-    conexao.query ("SELECT * FROM prod", (erro,result) => {
+    conexao.query ("SELECT * FROM produtos", (erro,result) => {
         if (erro){
             res.send(erro)
         } else {
