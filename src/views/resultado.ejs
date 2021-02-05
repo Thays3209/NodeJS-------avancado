@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src='main.js'></script>
+</head>
+<body>
+    <div class="container">
+    <div class="card mt-2 mb-2">
+      <center>
+        <div class="card-body ">
+<br><br>
+            <h1>Resultado - <strong><%= dado.cep %> </strong></h1>
+<br><br>
+            <p> <strong>Rua:</strong> <%= dado.logradouro %> </p>
+            <P> <strong>Numero:</strong> <%dado.numero %> </P>
+            <P> <strong>Complemento:</strong> <%dado.complemento %> </P>
+            <p> <strong>Bairro:</strong> <%= dado.bairro %> </p>
+            <p> <strong>Cidade:</strong> <%= dado.localidade %> </p>
+            <p> <strong> UF: </strong><%= dado.uf %> </p>
+            <p> <strong>DDD:</strong> <%= dado.ddd %></p>
+        </div>
+      </center>
+    </div>
+<br><br>
+<center>
+    <a href="/" class="btn btn-outline-dark" >Voltar</a>
+</center>
+</div>
+
+  
+</body>
+</html>
